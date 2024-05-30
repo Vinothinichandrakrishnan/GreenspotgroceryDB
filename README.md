@@ -6,15 +6,14 @@ Database design and implementation for Greenspot Grocer, a fictional family-owne
 
 This project involves designing a scalable relational database for Greenspot Grocer to manage their inventory, sales, and customer data effectively. The database is implemented in MySQL, and the design includes an Extended Entity-Relationship (EER) diagram, table creation scripts, sample data insertion scripts, and various SQL queries for testing and business insights.
 
-
 ## Getting Started
 
-### Prerequisites
+### Prerequisites:
 
 - MySQL Server and MySQL Workbench installed on your machine.
 - Basic knowledge of SQL.
 
-### Setting Up the Database
+### Setting Up the Database:
 
 1. Clone the repository:
     ```sh
@@ -28,13 +27,14 @@ This project involves designing a scalable relational database for Greenspot Gro
     - Open `insert_data.sql` in MySQL Workbench and execute the script.
 
 #### What's Inside?
+
 - The database schema includes tables for Items, Sales, ItemTypes, Locations, Units, and Vendors.
 - Each table has meaningful names for fields and includes primary keys.
 - Foreign keys are used to maintain referential integrity between tables.
 - Data types are assigned appropriately based on the nature of each field.
 - Sample data is loaded into these tables ensuring foreign key values match the referenced primary keys.
 
-### Running Queries
+### Running Queries:
 
 - Open the `.sql` files in the `queries/` directory in MySQL Workbench to run various test and business queries.
 
