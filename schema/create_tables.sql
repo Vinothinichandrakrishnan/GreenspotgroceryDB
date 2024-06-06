@@ -20,7 +20,8 @@ CREATE TABLE Units (
 );
 
 CREATE TABLE Items (
-    item_num INT PRIMARY KEY,
+    item_id INT PRIMARY KEY,
+    item_num INT,
     description VARCHAR(255),
     quantity_on_hand INT,
     cost DECIMAL(10, 2),
@@ -40,9 +41,10 @@ CREATE TABLE Sales (
     sale_id INT PRIMARY KEY AUTO_INCREMENT,
     date_sold DATE,
     item_num INT,
+    item_id INT,
     cust_id INT,
     quantity INT,
-    FOREIGN KEY (item_num) REFERENCES Items(item_num)
+    FOREIGN KEY (item_id) REFERENCES Items(item_id)
 );
 
 
